@@ -1,0 +1,5 @@
+a = input("Input your first number : \n")
+b = input("Input your second number : \n")
+print(a,"==",b, a==b)
+print(a,">",b, a>b)
+print(a,"<",b, a<b)
