@@ -1,12 +1,12 @@
 print("-----แนะนำตัว-----")
-print('*'*25)
+print('*'*20)
 class yourname :
-    def __init__(self,firstname,lastname,gender,year,area,city) :
+    def __init__(self,firstname,lastname,gender,year,department,city) :
         self.firstname = firstname 
         self.lastname = lastname
         self.gender = gender
         self.year = year
-        self.area = area
+        self.department = department
         self.city = city
     
     def showyour(self) :
@@ -15,14 +15,14 @@ class yourname :
         print("สกุล : ",self.lastname)
         print("เพศ : ",self.gender)
         print("ชั้นปี : ",self.year)
-        print("สาขาวิชา : ",self.area)
+        print("สาขาวิชา : ",self.department)
         print("เมืองที่อยู่ : ",self.city)
 
 firstname = input("ชื่อ :")
 lastname = input("สกุล :")
 gender = input("เพศ :")
 year = input("ชั้นปี :")
-area = input("สาขาวิชา :")
+department = input("สาขาวิชา :")
 city = input("เมืองที่อยู่:")
-x = yourname(firstname,lastname,gender,year,area,city)
+x = yourname(firstname,lastname,gender,year,department,city)
 x.showyour()
